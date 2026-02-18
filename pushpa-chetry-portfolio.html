@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa Chetry — Web Developer & AI Tools Specialist | Arunachal Pradesh</title>
+    <meta name="description" content="Pushpa Chetry — Web Developer & AI Tools Specialist based in Arunachal Pradesh, India. Modern, conversion-focused websites for small businesses and startups using AI-powered workflows.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Pushpa Chetry","jobTitle":"Web Developer & AI Tools Specialist","telephone":"+919378138414","email":"pushpachetry147@gmail.com","address":{"@type":"PostalAddress","addressRegion":"Arunachal Pradesh","addressCountry":"IN"},"url":"https://pushpachetry.com","sameAs":["https://wa.me/919378138414","https://www.instagram.com/kxfz_43"],"knowsAbout":["Web Development","AI Tools Integration","Frontend Development","Small Business Websites","Automation"]}
+    </script>
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --ink:#0c0c0e;--ink-soft:#141418;
+            --chalk:#f0ede8;--chalk-dim:#9b9690;
+            --signal:#e8ff47;--signal-dim:rgba(232,255,71,0.10);
+            --wire:rgba(240,237,232,0.07);--wire-mid:rgba(240,237,232,0.13);
+            --ff-serif:'DM Serif Display',Georgia,serif;
+            --ff-sans:'Space Grotesk',sans-serif;
+            --ff-mono:'Space Mono',monospace;
+        }
+        html{scroll-behavior:smooth}
+        body{font-family:var(--ff-sans);background:var(--ink);color:var(--chalk);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+        body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");opacity:.5}
+        ::-webkit-scrollbar{width:2px}::-webkit-scrollbar-track{background:var(--ink)}::-webkit-scrollbar-thumb{background:var(--signal)}
+
+        /* NAV */
+        nav{position:fixed;top:0;width:100%;z-index:1000;padding:28px 64px;display:flex;justify-content:space-between;align-items:center;transition:all .4s ease}
+        nav.scrolled{background:rgba(12,12,14,.95);backdrop-filter:blur(20px);padding:15px 64px;border-bottom:1px solid var(--wire)}
+        .nav-logo{font-family:var(--ff-mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--chalk);text-decoration:none}
+        .nav-logo .dot{color:var(--signal)}
+        .nav-links{list-style:none;display:flex;gap:48px}
+        .nav-links a{font-family:var(--ff-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--chalk-dim);text-decoration:none;transition:color .3s}
+        .nav-links a:hover{color:var(--signal)}
+        .nav-cta{font-family:var(--ff-mono);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--signal);color:var(--ink);padding:10px 24px;border-radius:2px;text-decoration:none;transition:all .2s}
+        .nav-cta:hover{background:#fff;transform:translateY(-1px)}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+        .hamburger span{width:22px;height:2px;background:var(--chalk);display:block;transition:.3s}
+
+        /* HERO */
+        .hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;padding:0 64px;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(var(--wire) 1px,transparent 1px),linear-gradient(90deg,var(--wire) 1px,transparent 1px);background-size:72px 72px;pointer-events:none}
+        .hero-left{padding-top:140px;padding-bottom:100px;position:relative;z-index:2}
+        .hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--ff-mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--signal);margin-bottom:44px}
+        .hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--signal)}
+        .hero h1{font-family:var(--ff-serif);font-size:clamp(50px,6.2vw,86px);line-height:1.05;font-weight:400;color:var(--chalk);margin-bottom:32px}
+        .hero h1 em{font-style:italic;color:var(--signal)}
+        .hero-desc{font-size:16px;line-height:1.8;color:var(--chalk-dim);font-weight:300;max-width:480px;margin-bottom:52px}
+        .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+        .btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--signal);color:var(--ink);font-family:var(--ff-mono);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:15px 30px;border-radius:2px;text-decoration:none;border:none;cursor:pointer;transition:all .2s}
+        .btn-primary:hover{background:#fff;transform:translateY(-2px);box-shadow:0 10px 36px rgba(232,255,71,.22)}
+        .btn-ghost{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--wire-mid);color:var(--chalk);font-family:var(--ff-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:15px 30px;border-radius:2px;text-decoration:none;background:transparent;cursor:pointer;transition:all .3s}
+        .btn-ghost:hover{border-color:var(--signal);color:var(--signal)}
+        .hero-right{position:relative;height:100vh;display:flex;flex-direction:column;justify-content:flex-end;z-index:2}
+        .hero-big-glyph{position:absolute;right:-24px;top:50%;transform:translateY(-52%);font-family:var(--ff-serif);font-size:38vw;font-style:italic;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(232,255,71,.06);user-select:none;pointer-events:none}
+        .hero-vertical-label{position:absolute;right:-8px;top:50%;transform:translateY(-50%) rotate(90deg);font-family:var(--ff-mono);font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--chalk-dim);opacity:.3;white-space:nowrap}
+        .hero-stats{position:relative;z-index:2;padding-bottom:100px;padding-left:48px}
+        .stat-row{display:flex;align-items:baseline;gap:14px;padding:22px 0;border-top:1px solid var(--wire)}
+        .stat-row:last-child{border-bottom:1px solid var(--wire)}
+        .stat-n{font-family:var(--ff-serif);font-size:46px;font-style:italic;color:var(--signal);line-height:1}
+        .stat-l{font-family:var(--ff-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--chalk-dim);max-width:140px;line-height:1.5}
+
+        /* MARQUEE */
+        .marquee-band{background:var(--signal);padding:13px 0;overflow:hidden}
+        .marquee-track{display:flex;animation:mq 22s linear infinite;width:max-content}
+        .mq-item{font-family:var(--ff-mono);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);padding:0 36px;white-space:nowrap}
+        .mq-sep{color:rgba(12,12,14,.35);margin-left:36px}
+        @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+        /* SECTIONS */
+        .section{padding:120px 64px}
+        .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-mono);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--signal);margin-bottom:28px}
+        .eyebrow::before{content:'';width:22px;height:1px;background:var(--signal)}
+
+        /* ABOUT */
+        .about{background:var(--ink-soft);border-top:1px solid var(--wire)}
+        .about-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:start}
+        .about-h2{font-family:var(--ff-serif);font-size:clamp(36px,4vw,52px);line-height:1.1;color:var(--chalk);margin-bottom:28px}
+        .about-h2 em{font-style:italic;color:var(--signal)}
+        .about-body{font-size:15px;line-height:1.85;color:var(--chalk-dim);font-weight:300}
+        .about-body strong{color:var(--chalk);font-weight:600}
+        .about-body p+p{margin-top:18px}
+        .skill-list{list-style:none;margin-top:44px}
+        .skill-item{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid var(--wire);font-size:13px;color:var(--chalk-dim);transition:color .3s}
+        .skill-item:hover{color:var(--chalk)}
+        .skill-badge{font-family:var(--ff-mono);font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--signal);background:var(--signal-dim);border:1px solid rgba(232,255,71,.15);padding:4px 10px;border-radius:2px}
+        .focus-items{display:flex;flex-direction:column}
+        .focus-item{padding:26px 0;border-bottom:1px solid var(--wire)}
+        .focus-item:first-child{border-top:1px solid var(--wire)}
+        .focus-item-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:9px}
+        .focus-idx{font-family:var(--ff-mono);font-size:9px;letter-spacing:.15em;color:var(--signal)}
+        .focus-arr{color:var(--chalk-dim);font-size:12px;transition:all .3s}
+        .focus-item:hover .focus-arr{color:var(--signal);transform:translateX(3px)}
+        .focus-item h3{font-size:15px;font-weight:600;color:var(--chalk);margin-bottom:7px}
+        .focus-item p{font-size:13px;line-height:1.7;color:var(--chalk-dim);font-weight:300}
+
+        /* SERVICES */
+        .services{background:var(--ink);border-top:1px solid var(--wire)}
+        .svc-top{max-width:1200px;margin:0 auto 72px;display:flex;justify-content:space-between;align-items:flex-end}
+        .svc-h2{font-family:var(--ff-serif);font-size:clamp(38px,4.5vw,60px);line-height:1.05}
+        .svc-h2 em{font-style:italic;color:var(--signal)}
+        .svc-note{max-width:280px;font-size:13px;line-height:1.7;color:var(--chalk-dim);font-weight:300;text-align:right}
+        .svc-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--wire)}
+        .svc-card{padding:52px 40px;border-right:1px solid var(--wire);position:relative;overflow:hidden;transition:background .4s}
+        .svc-card:last-child{border-right:none}
+        .svc-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--signal);transition:width .5s ease}
+        .svc-card:hover::after{width:100%}
+        .svc-card:hover{background:rgba(232,255,71,.02)}
+        .svc-num{font-family:var(--ff-mono);font-size:9px;letter-spacing:.2em;color:var(--signal);margin-bottom:32px;display:block}
+        .svc-icon{width:50px;height:50px;border:1px solid var(--wire-mid);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:24px}
+        .svc-card h3{font-size:19px;font-weight:600;color:var(--chalk);margin-bottom:13px;line-height:1.3}
+        .svc-card p{font-size:13px;line-height:1.75;color:var(--chalk-dim);font-weight:300;margin-bottom:22px}
+        .svc-tags{display:flex;flex-wrap:wrap;gap:7px}
+        .svc-tag{font-family:var(--ff-mono);font-size:8px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--wire-mid);color:var(--chalk-dim);padding:5px 10px;border-radius:2px}
+
+        /* PROCESS */
+        .process{background:var(--ink-soft);border-top:1px solid var(--wire)}
+        .proc-inner{max-width:1200px;margin:0 auto}
+        .proc-top{margin-bottom:72px;display:flex;justify-content:space-between;align-items:flex-end}
+        .proc-h2{font-family:var(--ff-serif);font-size:clamp(36px,4vw,52px);line-height:1.08}
+        .proc-h2 em{font-style:italic;color:var(--signal)}
+        .proc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+        .p-step{padding:36px 36px 36px 0;border-right:1px solid var(--wire)}
+        .p-step:last-child{border-right:none;padding-right:0}
+        .p-step:not(:first-child){padding-left:36px}
+        .p-step-n{font-family:var(--ff-serif);font-size:60px;font-style:italic;color:transparent;-webkit-text-stroke:1px rgba(232,255,71,.18);line-height:1;margin-bottom:20px}
+        .p-step h3{font-size:15px;font-weight:600;color:var(--chalk);margin-bottom:10px}
+        .p-step p{font-size:12px;line-height:1.7;color:var(--chalk-dim);font-weight:300}
+
+        /* PROJECTS */
+        .projects{background:var(--ink);border-top:1px solid var(--wire)}
+        .proj-inner{max-width:1200px;margin:0 auto}
+        .proj-top{margin-bottom:60px;display:flex;justify-content:space-between;align-items:flex-end}
+        .proj-h2{font-family:var(--ff-serif);font-size:clamp(36px,4vw,52px)}
+        .proj-h2 em{font-style:italic;color:var(--signal)}
+        .proj-note{font-size:13px;color:var(--chalk-dim);font-weight:300;max-width:240px;text-align:right}
+        .proj-list{display:flex;flex-direction:column}
+        .proj-row{display:grid;grid-template-columns:64px 1fr 200px 120px;gap:32px;align-items:center;padding:28px 0;border-top:1px solid var(--wire);transition:background .3s;cursor:default}
+        .proj-row:last-child{border-bottom:1px solid var(--wire)}
+        .proj-row:hover{background:rgba(232,255,71,.015)}
+        .proj-row:hover .proj-arr{color:var(--signal);transform:translateX(4px)}
+        .proj-idx{font-family:var(--ff-mono);font-size:9px;letter-spacing:.15em;color:var(--chalk-dim)}
+        .proj-name{font-size:21px;font-weight:600;color:var(--chalk)}
+        .proj-type{font-family:var(--ff-mono);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--chalk-dim)}
+        .proj-arr{color:var(--chalk-dim);font-size:12px;transition:all .3s;text-align:right}
+        .proj-wip{font-family:var(--ff-mono);font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--signal);background:var(--signal-dim);border:1px solid rgba(232,255,71,.15);padding:5px 11px;border-radius:2px;display:inline-block}
+
+        /* CONTACT */
+        .contact{background:var(--ink-soft);border-top:1px solid var(--wire)}
+        .con-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:start}
+        .con-h2{font-family:var(--ff-serif);font-size:clamp(40px,5vw,64px);line-height:1.05;margin-bottom:24px}
+        .con-h2 em{font-style:italic;color:var(--signal)}
+        .con-desc{font-size:15px;line-height:1.8;color:var(--chalk-dim);font-weight:300;margin-bottom:48px}
+        .con-links{display:flex;flex-direction:column}
+        .c-link{display:flex;align-items:center;gap:18px;padding:20px 0;border-bottom:1px solid var(--wire);text-decoration:none;transition:all .3s}
+        .c-link:first-child{border-top:1px solid var(--wire)}
+        .c-link:hover .c-label{color:var(--signal)}
+        .c-link:hover .c-arr{color:var(--signal);transform:translateX(4px)}
+        .c-icon{width:42px;height:42px;background:var(--signal-dim);border:1px solid rgba(232,255,71,.15);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--signal);flex-shrink:0}
+        .c-content{flex:1}
+        .c-type{font-family:var(--ff-mono);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--chalk-dim);margin-bottom:3px}
+        .c-label{font-size:15px;font-weight:500;color:var(--chalk);transition:color .3s}
+        .c-arr{color:var(--chalk-dim);font-size:11px;transition:all .3s}
+        .con-form{background:rgba(240,237,232,.025);border:1px solid var(--wire);padding:44px 40px;border-radius:3px}
+        .f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+        .f-group{margin-bottom:18px}
+        .f-label{display:block;font-family:var(--ff-mono);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--chalk-dim);margin-bottom:8px}
+        .f-input{width:100%;background:rgba(240,237,232,.04);border:1px solid var(--wire);border-radius:2px;padding:13px 16px;font-family:var(--ff-sans);font-size:13px;color:var(--chalk);outline:none;transition:border-color .3s}
+        .f-input:focus{border-color:var(--signal)}
+        .f-input::placeholder{color:rgba(155,150,144,.4)}
+        textarea.f-input{min-height:130px;resize:vertical}
+        .f-submit{width:100%;background:var(--signal);color:var(--ink);border:none;padding:15px;font-family:var(--ff-mono);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px}
+        .f-submit:hover{background:#fff;transform:translateY(-2px)}
+
+        /* WHATSAPP FLOAT */
+        .wa-btn{position:fixed;bottom:28px;right:28px;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;color:#fff;z-index:997;box-shadow:0 8px 28px rgba(37,211,102,.35);text-decoration:none;transition:transform .3s,box-shadow .3s}
+        .wa-btn:hover{transform:scale(1.1) translateY(-3px);box-shadow:0 14px 40px rgba(37,211,102,.5)}
+
+        /* FOOTER */
+        footer{padding:64px 64px 36px;background:var(--ink);border-top:1px solid var(--wire)}
+        .foot-top{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:48px;border-bottom:1px solid var(--wire);margin-bottom:36px}
+        .foot-name{font-family:var(--ff-serif);font-size:44px;font-style:italic;color:var(--chalk);line-height:1}
+        .foot-sub{font-family:var(--ff-mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--chalk-dim);margin-top:8px}
+        .foot-nav{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+        .foot-nav a{font-family:var(--ff-mono);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--chalk-dim);text-decoration:none;transition:color .3s}
+        .foot-nav a:hover{color:var(--signal)}
+        .foot-bottom{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+        .foot-copy{font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;color:rgba(155,150,144,.4)}
+        .foot-signal{font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;color:var(--signal);opacity:.6}
+
+        /* REVEAL */
+        .rev{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}
+        .rev.vis{opacity:1;transform:translateY(0)}
+        .d1{transition-delay:.08s}.d2{transition-delay:.18s}.d3{transition-delay:.28s}.d4{transition-delay:.38s}
+
+        /* MOBILE NAV */
+        .mob-nav{display:none;position:fixed;inset:0;background:var(--ink);z-index:998;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+        .mob-nav.open{display:flex}
+        .mob-nav a{font-family:var(--ff-serif);font-size:40px;font-style:italic;color:var(--chalk);text-decoration:none;transition:color .3s}
+        .mob-nav a:hover{color:var(--signal)}
+        .mob-cta{font-family:var(--ff-mono)!important;font-style:normal!important;font-size:11px!important;background:var(--signal)!important;color:var(--ink)!important;padding:13px 32px;border-radius:2px;margin-top:8px}
+
+        /* RESPONSIVE */
+        @media(max-width:1060px){
+            nav{padding:22px 32px}nav.scrolled{padding:14px 32px}
+            .nav-links,.nav-cta{display:none}.hamburger{display:flex}
+            .hero{grid-template-columns:1fr;padding:0 32px}
+            .hero-left{padding-top:120px;padding-bottom:72px}.hero-right{display:none}
+            .about-grid{grid-template-columns:1fr;gap:56px}
+            .con-inner{grid-template-columns:1fr;gap:56px}
+            .svc-grid{grid-template-columns:1fr}
+            .svc-card{border-right:none;border-bottom:1px solid var(--wire)}.svc-card:last-child{border-bottom:none}
+            .proc-steps{grid-template-columns:1fr 1fr}
+            .svc-top{flex-direction:column;align-items:flex-start;gap:16px}.svc-note{text-align:left;max-width:100%}
+            .proj-row{grid-template-columns:48px 1fr 80px;gap:16px}.proj-type{display:none}
+            .section{padding:80px 32px}
+            footer{padding:52px 32px 28px}
+            .foot-top{flex-direction:column;gap:28px;align-items:flex-start}
+        }
+        @media(max-width:600px){
+            .hero h1{font-size:42px}
+            .hero-actions{flex-direction:column;align-items:flex-start}
+            .btn-primary,.btn-ghost{width:100%;justify-content:center}
+            .proc-steps{grid-template-columns:1fr}
+            .p-step{border-right:none!important;border-top:1px solid var(--wire)!important;padding:28px 0!important}
+            .p-step:first-child{border-top:none!important;padding-top:0!important}
+            .f-row{grid-template-columns:1fr}
+            .proj-row{grid-template-columns:1fr;gap:6px}.proj-idx{display:none}
+            .foot-nav{flex-wrap:wrap;gap:20px}
+        }
+    </style>
+</head>
+<body>
+
+<a class="wa-btn" href="https://wa.me/919378138414?text=Hi%20Pushpa!%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<!-- Mobile Nav -->
+<div class="mob-nav" id="mobNav">
+    <a href="#about" onclick="closeMob()">About</a>
+    <a href="#services" onclick="closeMob()">Services</a>
+    <a href="#process" onclick="closeMob()">Process</a>
+    <a href="#projects" onclick="closeMob()">Projects</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+    <a href="https://wa.me/919378138414" class="mob-cta" target="_blank">WhatsApp →</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+    <a href="#" class="nav-logo">Pushpa<span class="dot">.</span></a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/919378138414?text=Hi%20Pushpa!%20Let%27s%20build%20something." class="nav-cta" target="_blank">Let's Talk →</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-left">
+        <div class="hero-eyebrow rev">Available for New Projects</div>
+        <h1 class="rev d1">Websites that<br><em>convert</em>,<br>built with AI</h1>
+        <p class="hero-desc rev d2">I'm Pushpa Chetry — a web developer &amp; AI tools specialist from Arunachal Pradesh, India. I build fast, modern, conversion-focused websites for small businesses and startups using cutting-edge tech and intelligent workflows.</p>
+        <div class="hero-actions rev d3">
+            <a href="https://wa.me/919378138414?text=Hi%20Pushpa!%20I%20want%20to%20build%20a%20website." class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Start Your Project</a>
+            <a href="#services" class="btn-ghost">See Services →</a>
+        </div>
+    </div>
+    <div class="hero-right">
+        <div class="hero-big-glyph" aria-hidden="true">P</div>
+        <div class="hero-vertical-label" aria-hidden="true">Arunachal Pradesh · India · Remote-First · Available Worldwide</div>
+        <div class="hero-stats rev d2">
+            <div class="stat-row"><div class="stat-n">3+</div><div class="stat-l">Services Offered</div></div>
+            <div class="stat-row"><div class="stat-n">AI</div><div class="stat-l">Powered Dev Workflow</div></div>
+            <div class="stat-row"><div class="stat-n">24h</div><div class="stat-l">WhatsApp Response</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+        <span class="mq-item">Web Development<span class="mq-sep">✦</span></span><span class="mq-item">AI Integration<span class="mq-sep">✦</span></span><span class="mq-item">Small Business Websites<span class="mq-sep">✦</span></span><span class="mq-item">Automation Workflows<span class="mq-sep">✦</span></span><span class="mq-item">Interactive Frontends<span class="mq-sep">✦</span></span><span class="mq-item">Mobile-First Design<span class="mq-sep">✦</span></span><span class="mq-item">Fast Delivery<span class="mq-sep">✦</span></span><span class="mq-item">Web Development<span class="mq-sep">✦</span></span><span class="mq-item">AI Integration<span class="mq-sep">✦</span></span><span class="mq-item">Small Business Websites<span class="mq-sep">✦</span></span><span class="mq-item">Automation Workflows<span class="mq-sep">✦</span></span><span class="mq-item">Interactive Frontends<span class="mq-sep">✦</span></span><span class="mq-item">Mobile-First Design<span class="mq-sep">✦</span></span><span class="mq-item">Fast Delivery<span class="mq-sep">✦</span></span>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+    <div class="about-grid">
+        <div>
+            <div class="eyebrow rev">About Me</div>
+            <h2 class="about-h2 rev d1">A developer who<br>builds with <em>intent</em></h2>
+            <div class="about-body rev d2">
+                <p>I'm a self-taught web developer and AI tools specialist based in <strong>Arunachal Pradesh, India</strong>, focused on building modern, performance-driven websites for small businesses and startups that need a professional digital presence without enterprise-level pricing.</p>
+                <p>I combine <strong>clean frontend development</strong> with <strong>AI-powered workflows</strong> to deliver efficient, scalable, and conversion-focused digital products. Every project I take on is built from scratch — no templates, no shortcuts.</p>
+            </div>
+            <ul class="skill-list rev d3">
+                <li class="skill-item"><span>HTML / CSS / JavaScript</span><span class="skill-badge">Core</span></li>
+                <li class="skill-item"><span>Interactive & Animated Interfaces</span><span class="skill-badge">Frontend</span></li>
+                <li class="skill-item"><span>AI Chatbot Integration</span><span class="skill-badge">AI Tools</span></li>
+                <li class="skill-item"><span>Performance Optimization</span><span class="skill-badge">Technical</span></li>
+                <li class="skill-item"><span>Automation & Workflow Setup</span><span class="skill-badge">Systems</span></li>
+                <li class="skill-item"><span>Mobile-First Design</span><span class="skill-badge">Design</span></li>
+            </ul>
+        </div>
+        <div>
+            <div class="eyebrow rev">What I Focus On</div>
+            <div class="focus-items rev d1">
+                <div class="focus-item">
+                    <div class="focus-item-head"><span class="focus-idx">01</span><span class="focus-arr">→</span></div>
+                    <h3>Modern Interactive Websites</h3>
+                    <p>Building modern, interactive websites using advanced frontend techniques that create engaging experiences — and keep visitors converting.</p>
+                </div>
+                <div class="focus-item">
+                    <div class="focus-item-head"><span class="focus-idx">02</span><span class="focus-arr">→</span></div>
+                    <h3>Small Business Online Presence</h3>
+                    <p>Helping small businesses establish strong digital presence with professional, conversion-focused websites at honest pricing.</p>
+                </div>
+                <div class="focus-item">
+                    <div class="focus-item-head"><span class="focus-idx">03</span><span class="focus-arr">→</span></div>
+                    <h3>AI Tools Integration</h3>
+                    <p>Integrating AI tools into your website and workflow to improve efficiency, automate repetitive tasks, and deliver smarter digital products.</p>
+                </div>
+                <div class="focus-item">
+                    <div class="focus-item-head"><span class="focus-idx">04</span><span class="focus-arr">→</span></div>
+                    <h3>Performance-First Development</h3>
+                    <p>Building fast, lightweight, optimized web experiences that load instantly on every device — especially critical for India's mobile audience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+    <div class="svc-top rev">
+        <div>
+            <div class="eyebrow">What I Offer</div>
+            <h2 class="svc-h2">Three ways I can<br><em>help you grow</em></h2>
+        </div>
+        <p class="svc-note">All services tailored for small businesses &amp; startups needing a professional edge online.</p>
+    </div>
+    <div class="svc-grid rev d1">
+        <div class="svc-card">
+            <span class="svc-num">01 — Web Development</span>
+            <div class="svc-icon">🌐</div>
+            <h3>Business Websites</h3>
+            <p>Custom-built websites for small businesses that need a professional online presence without the enterprise price tag. Clean, fast, made to convert.</p>
+            <div class="svc-tags"><span class="svc-tag">HTML/CSS/JS</span><span class="svc-tag">Responsive</span><span class="svc-tag">SEO Ready</span><span class="svc-tag">Fast Load</span></div>
+        </div>
+        <div class="svc-card">
+            <span class="svc-num">02 — Interactive Design</span>
+            <div class="svc-icon">✨</div>
+            <h3>Interactive Experiences</h3>
+            <p>Elevate your website with interactive elements, custom animations, and modern UI that captures attention and keeps visitors engaged longer.</p>
+            <div class="svc-tags"><span class="svc-tag">Animations</span><span class="svc-tag">Modern UI</span><span class="svc-tag">Interactive</span><span class="svc-tag">Scroll FX</span></div>
+        </div>
+        <div class="svc-card">
+            <span class="svc-num">03 — AI & Automation</span>
+            <div class="svc-icon">🤖</div>
+            <h3>AI Integration</h3>
+            <p>Leverage AI to enhance your website's capabilities — from smart chatbots to workflow automation that saves you hours every single week.</p>
+            <div class="svc-tags"><span class="svc-tag">AI Chatbot</span><span class="svc-tag">Automation</span><span class="svc-tag">Smart Forms</span><span class="svc-tag">Workflows</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process" id="process">
+    <div class="proc-inner">
+        <div class="proc-top rev">
+            <div>
+                <div class="eyebrow">How I Work</div>
+                <h2 class="proc-h2">Simple process,<br><em>real results</em></h2>
+            </div>
+        </div>
+        <div class="proc-steps rev d1">
+            <div class="p-step">
+                <div class="p-step-n">01</div>
+                <h3>Discovery</h3>
+                <p>We discuss your business, goals, and what the website needs to accomplish. Quick WhatsApp chat — no forms, no waiting.</p>
+            </div>
+            <div class="p-step">
+                <div class="p-step-n">02</div>
+                <h3>Strategy & Design</h3>
+                <p>I plan the structure, design direction, and content flow so every section has a purpose and pushes visitors toward action.</p>
+            </div>
+            <div class="p-step">
+                <div class="p-step-n">03</div>
+                <h3>Build & Integrate</h3>
+                <p>Clean custom code from scratch. No bloated page builders. Fast-loading, mobile-first, with any AI tools or integrations needed.</p>
+            </div>
+            <div class="p-step">
+                <div class="p-step-n">04</div>
+                <h3>Launch & Support</h3>
+                <p>You review, I refine. Once you're happy, we launch. I stay available for updates and improvements after delivery.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+    <div class="proj-inner">
+        <div class="proj-top rev">
+            <div>
+                <div class="eyebrow">My Work</div>
+                <h2 class="proj-h2">Projects &amp; <em>builds</em></h2>
+            </div>
+            <p class="proj-note">Actively building my portfolio with real-world projects.</p>
+        </div>
+        <div class="proj-list rev d1">
+            <div class="proj-row">
+                <span class="proj-idx">01</span>
+                <span class="proj-name">Personal Portfolio v2</span>
+                <span class="proj-type">Web Design · Frontend</span>
+                <span class="proj-arr"><span class="proj-wip">Live</span></span>
+            </div>
+            <div class="proj-row">
+                <span class="proj-idx">02</span>
+                <span class="proj-name">Small Business Landing Page</span>
+                <span class="proj-type">Web Dev · Conversion</span>
+                <span class="proj-arr"><span class="proj-wip">In Progress</span></span>
+            </div>
+            <div class="proj-row">
+                <span class="proj-idx">03</span>
+                <span class="proj-name">AI Chatbot Integration</span>
+                <span class="proj-type">AI Tools · Automation</span>
+                <span class="proj-arr"><span class="proj-wip">Building</span></span>
+            </div>
+            <div class="proj-row">
+                <span class="proj-idx">04</span>
+                <span class="proj-name">Interactive 3D Web Experience</span>
+                <span class="proj-type">Frontend · Animation</span>
+                <span class="proj-arr"><span class="proj-wip">Concept</span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+    <div class="con-inner">
+        <div>
+            <div class="eyebrow rev">Get In Touch</div>
+            <h2 class="con-h2 rev d1">Let's build<br><em>something</em><br>together</h2>
+            <p class="con-desc rev d2">Have a project in mind? I'd love to hear about it. Send me a WhatsApp message or email — I'll get back within 24 hours.</p>
+            <div class="con-links rev d3">
+                <a class="c-link" href="https://wa.me/919378138414?text=Hi%20Pushpa!%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">
+                    <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div class="c-content"><div class="c-type">WhatsApp — Preferred</div><div class="c-label">+91 93781 38414</div></div>
+                    <span class="c-arr">→</span>
+                </a>
+                <a class="c-link" href="mailto:pushpachetry147@gmail.com">
+                    <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="c-content"><div class="c-type">Email</div><div class="c-label">pushpachetry147@gmail.com</div></div>
+                    <span class="c-arr">→</span>
+                </a>
+                <a class="c-link" href="https://www.instagram.com/kxfz_43?igsh=MXZhbDl1MmtvN3U5Zw==" target="_blank" rel="noopener">
+                    <div class="c-icon"><i class="fab fa-instagram"></i></div>
+                    <div class="c-content"><div class="c-type">Instagram</div><div class="c-label">@kxfz_43</div></div>
+                    <span class="c-arr">→</span>
+                </a>
+                <div class="c-link" style="cursor:default;">
+                    <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="c-content"><div class="c-type">Location</div><div class="c-label">Arunachal Pradesh, India · Remote-First</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="con-form rev d2">
+            <form id="contactForm">
+                <div class="f-row">
+                    <div class="f-group">
+                        <label class="f-label" for="f-name">Your Name</label>
+                        <input class="f-input" type="text" id="f-name" placeholder="Rahul Sharma" required>
+                    </div>
+                    <div class="f-group">
+                        <label class="f-label" for="f-email">Email Address</label>
+                        <input class="f-input" type="email" id="f-email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="f-group">
+                    <label class="f-label" for="f-service">Service Needed</label>
+                    <select class="f-input" id="f-service">
+                        <option value="" disabled selected>Select a service...</option>
+                        <option>Business Website</option>
+                        <option>Interactive / Animated Website</option>
+                        <option>AI / Chatbot Integration</option>
+                        <option>Automation Setup</option>
+                        <option>Other / Not Sure</option>
+                    </select>
+                </div>
+                <div class="f-group">
+                    <label class="f-label" for="f-msg">Project Details</label>
+                    <textarea class="f-input" id="f-msg" placeholder="Tell me about your project — what does your business do, what do you need, what's your timeline?"></textarea>
+                </div>
+                <button class="f-submit" type="submit"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="foot-top">
+        <div>
+            <div class="foot-name">Pushpa Chetry</div>
+            <div class="foot-sub">Web Developer · AI Tools Specialist · Arunachal Pradesh, India</div>
+        </div>
+        <nav class="foot-nav" aria-label="Footer navigation">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com/kxfz_43?igsh=MXZhbDl1MmtvN3U5Zw==" target="_blank" rel="noopener" title="Instagram @kxfz_43"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919378138414" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </nav>
+    </div>
+    <div class="foot-bottom">
+        <span class="foot-copy">© 2026 Pushpa Chetry · pushpachetry.com</span>
+        <span class="foot-signal">Available for projects →</span>
+    </div>
+</footer>
+
+<script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+    // Mobile nav
+    let mobOpen = false;
+    function toggleMob() {
+        mobOpen = !mobOpen;
+        document.getElementById('mobNav').classList.toggle('open', mobOpen);
+        document.body.style.overflow = mobOpen ? 'hidden' : '';
+    }
+    function closeMob() {
+        mobOpen = false;
+        document.getElementById('mobNav').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Reveal on scroll
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+
+    // Hero reveals on load
+    document.querySelectorAll('.hero .rev').forEach((el, i) => {
+        setTimeout(() => el.classList.add('vis'), 180 + i * 110);
+    });
+
+    // Contact form → WhatsApp
+    document.getElementById('contactForm').addEventListener('submit', e => {
+        e.preventDefault();
+        const name    = document.getElementById('f-name').value.trim();
+        const email   = document.getElementById('f-email').value.trim();
+        const service = document.getElementById('f-service').value || 'Not specified';
+        const msg     = document.getElementById('f-msg').value.trim();
+        const text = `Hi Pushpa!%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0A%0AProject Details:%0A${encodeURIComponent(msg)}`;
+        window.open(`https://wa.me/919378138414?text=${text}`, '_blank');
+        e.target.reset();
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const t = document.querySelector(a.getAttribute('href'));
+            if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+        });
+    });
+</script>
+</body>
+</html>
